@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #FAFAFA;
+    margin-top: 115px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FAFAFA;
+    box-shadow: 0 5px 5px rgba(78, 78, 78, 0.71);
+    z-index: 108888888880;
+}
+
+
+.forsideBillede img {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map img {
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+ul.menu {
+    float: right;
+    margin: 60px;
+}
+
+.menu a, .indhold a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    font-size: 1em;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+  
+}
+
+li a:hover {
+    color: #FAFAFA;
+    background: rgba(136, 36, 33, 0.9);
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.menu .active {
+    color: #FAFAFA;
+    background: rgba(136, 36, 33, 0.9);
+    padding: 20px;
+    border-radius: 7px;
+}
+
+li {
+    display: inline;
+    
+}
+
+
+.hey {
+    float: left;
+    margin: 20px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    font-size: 1.2em;
+    
+    
+}
+
+.factindhold {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 95%;
+    max-width: 500px;
+
+}
+
+    input[type="password"],
+    input[type="submit"],
+    input[type="text"],
+    textarea
+{
+    color: #FAFAFA;
+    background-color: rgba(136, 36, 33, 0.76);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 15px;
+    justify-content: center;
+
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 7px;
+
+}
+
+input[type="text"]::placeholder {
+   color: #fff;
+}
+
+input[type="password"]::placeholder {
+   color: #fff;
+}
+
+input[type="submit"] {
+    padding: 15px 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #9d9999;
+    margin-bottom: 1em;
+}
+
+.factlogin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.factlist {
+    background: rgba(136, 36, 33, 0.76);
+    width: 95%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 1em;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+.factlist h1 {
+    display: block;
+    text-align: center;
+}
+
+.factlist a {
+    color: #FFF;
+}
+
+.fact {
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+.fact:last-of-type {
+    border-bottom: none;
+}
+
+.factbuttons {
+    float: right;
+}
+
+.message {
+    width: 95%;
+    max-width: 500px;
+
+    background: #076559;
+    padding: 5px;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.wrong {
+    background: #cd4932;
+}
+
+.factbox {
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    bottom: 70%;
+    /* right: 38px; */
+    right: -262px;
+    display: flex;
+    transition: all .3s ease-in-out;
+    z-index: 1000;
+}
+
+.factbox:hover {
+    right: 38px;
+}
+
+.facttext {
+    background: rgba(136, 36, 33, 0.9);
+    transform: rotate(-90deg);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 5px 12px;
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    left: -15px;
+}
+
+.facttext div {
+    letter-spacing: 5px;
+    margin-right: -5px;
+    font-weight: bold;
+}
+
+.thefact {
+    background: rgba(136, 36, 33, 0.9);
+    position: absolute;
+    top: -9.7px;
+    left: 38px;
+    width: 100%;
+    max-width:300px;
+    min-height: 105px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    color: #FFF;
+}
+
+.thefact div {
+    width: 200px;
+    text-align: center;
+}
+
+.footerContainer {
+    background: rgba(136, 36, 33, 0.9);
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.copyrightTekst {
+    color: #FAFAFA;
+}
+
+
+.textOverskrift1 {
+    font-size: 1.8em;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Satisfy; 
+}
+
+.textUnderskrift {
+    font-size: 1.7em;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Satisfy;
+}
+
+
+.text {
+    text-align: justify;
+    padding-bottom: 30px;
+}
+.map {
+    letter-spacing: 0;
+}
+
+.socialCol a {
+    letter-spacing: 0;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+
+.socialicon i {
+    background: white;
+    padding: 10px;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.socialicon:hover i {
+    color: rgba(136, 36, 33, 0.9);
+}
+
+.socialIcons {
+    text-align: center;
+}
+ .menuMobil {
+	display: flex;
+	position: fixed;
+
+	top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background: rgba(0,0,0,.8);
+    z-index: 10;
+     
+    margin: 0;
+}
+
+    .menuMobil li {
+    display: block;
+    margin: 10px 0px;
+}
+
+    .menuMobilKnap {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	height: 30px;
+	width: 30px;
+	background: url("../img/menu_icon.png") center no-repeat;  
+	background-size: 80%;
+    border: none;
+	transition: 400ms ease-in-out;
+    z-index: 20;
+    display: none;
+}
+
+    .menuMobilKnap.expanded {
+	transform: rotate(90deg);
+}
+
+    .menuMobil a {
+	display: block;
+    color: #fff;
+}
+
+    @media (max-width: 1024px) {
+	.menuMobil {
+		display: flex;
+	}
+
+    .menuMobilKnap {
+        display: block;
+    }
+
+	.menu {
+		display: none;
+	}
+}
